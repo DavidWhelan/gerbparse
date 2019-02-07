@@ -12,49 +12,57 @@
 
 1548287744 source:c:\users\david\desktop\gerbparse\gerbersyntaxreader.cpp
 
-1548289070 source:c:\users\david\desktop\gerbparse\src\aperture.cpp
+1549577798 source:c:\users\david\desktop\gerbparse\src\aperture.cpp
+	"Aperture.h"
+	<iostream>
+	<math.h>
+
+1549574527 c:\users\david\desktop\gerbparse\include\aperture.h
+	"Shape.h"
+
+1549485052 c:\users\david\desktop\gerbparse\include\gerbergraphicsstate.h
 	"Aperture.h"
 
-1548637904 c:\users\david\desktop\gerbparse\include\aperture.h
-
-1548697917 c:\users\david\desktop\gerbparse\include\gerbergraphicsstate.h
-
-1548626217 c:\users\david\desktop\gerbparse\include\gerbercommands.h
+1549341661 c:\users\david\desktop\gerbparse\include\gerbercommands.h
 	<string>
 	<vector>
 
-1548727512 source:c:\users\david\desktop\gerbparse\src\gerbersyntaxreader.cpp
+1549480818 source:c:\users\david\desktop\gerbparse\src\gerbersyntaxreader.cpp
 	"GerberSyntaxReader.h"
 	<iostream>
 
-1548638759 c:\users\david\desktop\gerbparse\include\gerbersyntaxreader.h
+1549411464 c:\users\david\desktop\gerbparse\include\gerbersyntaxreader.h
 	<string>
 	<regex>
 	"Aperture.h"
 	"GerberCommands.h"
 	"GerberGraphicsState.h"
 
-1548636355 source:c:\users\david\desktop\gerbparse\src\gerbercommands.cpp
+1549341743 source:c:\users\david\desktop\gerbparse\src\gerbercommands.cpp
 	<string>
 	<vector>
 	"GerberCommands.h"
 
-1548697949 source:c:\users\david\desktop\gerbparse\src\gerbergraphicsstate.cpp
+1549485066 source:c:\users\david\desktop\gerbparse\src\gerbergraphicsstate.cpp
 	"GerberGraphicsState.h"
 
-1548639633 source:c:\users\david\desktop\gerbparse\src\gerberfile.cpp
+1549575304 source:c:\users\david\desktop\gerbparse\src\gerberfile.cpp
 	"GerberFile.h"
+	<fstream>
+	<iostream>
 
-1548639664 c:\users\david\desktop\gerbparse\include\gerberfile.h
+1549493377 c:\users\david\desktop\gerbparse\include\gerberfile.h
 	<string>
 	"Aperture.h"
 	"GerberCommands.h"
 	"GerberGraphicsState.h"
 	"GerberSyntaxReader.h"
 	"Shape.h"
+	<memory>
 
-1548639571 source:c:\users\david\desktop\gerbparse\src\shape.cpp
+1549576778 source:c:\users\david\desktop\gerbparse\src\shape.cpp
 	"Shape.h"
 
-1548639537 c:\users\david\desktop\gerbparse\include\shape.h
+1549575208 c:\users\david\desktop\gerbparse\include\shape.h
+	<vector>
 

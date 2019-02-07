@@ -12,4 +12,24 @@ namespace gerber
         //dtor
     }
 
+    Vertex::Vertex(double setX, double setY)
+    {
+        x = setX;
+        y = setY;
+    }
+    Vertex::~Vertex()
+    {
+
+    }
+
+    Line::Line(Vertex* setStart, Vertex* setEnd)
+    {
+        startVertex = setStart;
+        endVertex = setEnd;
+    }
+    Line::~Line()
+    {
+
+    }
+
 }

@@ -1,6 +1,8 @@
 #ifndef GERBERGRAPHICSSTATE_H_INCLUDED
 #define GERBERGRAPHICSSTATE_H_INCLUDED
 
+#include "Aperture.h"
+
 namespace gerber
 {
     class graphicsState
@@ -18,7 +20,7 @@ namespace gerber
             int currentAperture;
             int interpolationState;
             graphicsState();
-            graphicsState(int, int, bool, double, double, int, bool, int);
+            graphicsState(int, int, bool, double, double, bool, int);
             ~graphicsState();
 
         private:

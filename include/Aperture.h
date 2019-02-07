@@ -1,14 +1,28 @@
 #ifndef APERTURE_H_INCLUDED
 #define APERTURE_H_INCLUDED
 
+#include "Shape.h"
+
 namespace gerber
 {
+    enum apertureTypes
+    {
+        CIRC,
+        REC
+    };
+
     class aperturePrimitive
     {
         public:
 
-            aperturePrimitive(int);
+            aperturePrimitive(int, apertureTypes);
+            aperturePrimitive();
+
+            virtual Shape generateShape(double, double);
+            virtual double returnRadius();
+
             int dCommandReferenceNumber;
+            apertureTypes type;
 
         private:
 
@@ -21,6 +35,9 @@ namespace gerber
 
             rectangleAperture(int, double, double);
 
+            Shape generateShape(double, double);
+            double returnRadius();
+
             double length;
             double width;
     };
@@ -30,6 +47,9 @@ namespace gerber
         public:
 
             circleAperture(int, double);
+
+            Shape generateShape(double, double);
+            double returnRadius();
 
             double diameter;
     };

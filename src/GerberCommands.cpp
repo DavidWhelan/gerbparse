@@ -18,7 +18,7 @@ namespace gerber
         numberOfIntegerDigits = integerDigits;
         numberOfDecimalDigits = decimalDigits;
     }
-
+    formatSpecification::formatSpecification():commandBaseClass(FS){}
     formatSpecification::~formatSpecification(){}
 
     unitMode::unitMode(bool setUnitType)

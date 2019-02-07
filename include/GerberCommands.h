@@ -35,6 +35,7 @@ namespace gerber
             int numberOfDecimalDigits;
 
             formatSpecification(int, int);
+            formatSpecification();
             ~formatSpecification();
     };
 

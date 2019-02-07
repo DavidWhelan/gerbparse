@@ -8,6 +8,7 @@
 #include "GerberGraphicsState.h"
 #include "GerberSyntaxReader.h"
 #include "Shape.h"
+#include <memory>
 
 namespace gerber
 {
@@ -15,17 +16,18 @@ namespace gerber
     {
         public:
             /** Default constructor */
-            GerberFile(std::string);
+            GerberFile();
             /** Default destructor */
             virtual ~GerberFile();
 
-            std::vector<aperturePrimitive> apertureLibrary;
+            std::vector<std::unique_ptr<aperturePrimitive>> apertureLibrary;
             std::vector<Shape> shapeList;
-            std::string pathToFile;
             graphicsState fileState;
             GerberSyntaxReader syntaxReader;
 
-            void execute();
+            void execute(std::string, bool);
+
+            void clean();
 
         protected:
 

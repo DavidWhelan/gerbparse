@@ -19,7 +19,16 @@ class GerberSyntaxReader
 
         gerber::graphicsState *graphicsStateForParsing;
 
-        commandBaseClass parseCommand(std::string);
+        int parseCommandID(std::string);
+
+        formatSpecification returnFormat(std::string);
+        unitMode returnUnit(std::string);
+        apertureDefine returnApertureDefine(std::string);
+        setCurrentAperture returnApertureSet(std::string);
+        operation returnOperation(std::string);
+        loadPolarity returnPolarity(std::string);
+        setInterpolationMode returnInterpolation(std::string);
+        unknownCommand returnUnknown(std::string);
 
         std::regex FSCommand;
         std::regex MOCommand;
