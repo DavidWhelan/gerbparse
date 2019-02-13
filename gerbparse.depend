@@ -12,7 +12,7 @@
 
 1548287744 source:c:\users\david\desktop\gerbparse\gerbersyntaxreader.cpp
 
-1549577798 source:c:\users\david\desktop\gerbparse\src\aperture.cpp
+1549598612 source:c:\users\david\desktop\gerbparse\src\aperture.cpp
 	"Aperture.h"
 	<iostream>
 	<math.h>
@@ -46,12 +46,12 @@
 1549485066 source:c:\users\david\desktop\gerbparse\src\gerbergraphicsstate.cpp
 	"GerberGraphicsState.h"
 
-1549575304 source:c:\users\david\desktop\gerbparse\src\gerberfile.cpp
+1549811274 source:c:\users\david\desktop\gerbparse\src\gerberfile.cpp
 	"GerberFile.h"
 	<fstream>
 	<iostream>
 
-1549493377 c:\users\david\desktop\gerbparse\include\gerberfile.h
+1549811140 c:\users\david\desktop\gerbparse\include\gerberfile.h
 	<string>
 	"Aperture.h"
 	"GerberCommands.h"

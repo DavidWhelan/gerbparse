@@ -37,6 +37,14 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Compiler>
+			<Add directory="C:/gpc233-release" />
+			<Add directory="C:/Users/David/Desktop/gerbparse/include" />
+		</Compiler>
+		<Linker>
+			<Add library="gerbparse" />
+			<Add directory="C:/Users/David/Desktop/gerbparse/bin/Debug" />
+		</Linker>
 		<Unit filename="include/Aperture.h" />
 		<Unit filename="include/GerberCommands.h" />
 		<Unit filename="include/GerberFile.h" />

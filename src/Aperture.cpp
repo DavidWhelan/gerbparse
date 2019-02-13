@@ -88,8 +88,8 @@ namespace gerber
         int resolutionDegrees = 45;
         for(int i = 0; i<(360/resolutionDegrees); i++)
         {
-            double xCoord = radius * cos((resolutionDegrees*i)*(3.14159265/180.0));
-            double yCoord = radius * sin((resolutionDegrees*i)*(3.14159265/180.0));
+            double xCoord = radius * cos((resolutionDegrees*i)*(3.14159265/180.0)) + x;
+            double yCoord = radius * sin((resolutionDegrees*i)*(3.14159265/180.0)) + y;
             returnShape.listOfVerticies.push_back(Vertex(xCoord, yCoord));
         }
 

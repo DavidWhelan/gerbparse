@@ -25,6 +25,8 @@ namespace gerber
             graphicsState fileState;
             GerberSyntaxReader syntaxReader;
 
+            Shape tempShapeOutline;
+
             void execute(std::string, bool);
 
             void clean();
